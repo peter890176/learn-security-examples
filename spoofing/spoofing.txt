@@ -1,1 +1,11 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+1.
+The spoofing vulnerability includes scenarios where the username is not a string and the cookie is not set to HttpOnly. 
+Ensuring the username is a string can prevent malicious users from injecting executable code through input, which could be a malicious process. 
+Setting cookies to "HttpOnly" can prevent JavaScript from accessing the cookie, enhancing security.
+
+2.
+Only confidentiality is reduced. Malicious users can use the cookies to access web pages that should be protected for confidentiality. 
+However, integrity and availability are not affected. 
+This is because the integrity of the data remains intact, as authorized users' access does not alter the data's completeness.
+The availability also remains unchanged, allowing legit users to access the web page normally.
