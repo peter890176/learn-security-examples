@@ -1,2 +1,10 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+1.
+Vulnerability:
+The absence of user input sanitization. 
+The secure version uses a try-catch block to gracefully handle any potential errors in the user input.
+
+2.
+Sanitization shoud be helpful for preventing script attack or NoSQL injection in this case.    
