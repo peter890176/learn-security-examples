@@ -1,0 +1,9 @@
+1.
+Vulnerability:
+The absence of authorization allows malicious users to escalate privileges and become administrators directly.
+
+2.
+Confidentiality could be violated because administrators have greater rights to access other users’ information. Integrity could also be threatened if the administrator can alter other users’ data or the data in the database.
+
+3.
+An authentication process, such as a login page combined with an authentication check, should be implemented to prevent this issue.

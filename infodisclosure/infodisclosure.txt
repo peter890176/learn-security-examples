@@ -1,3 +1,12 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
-Which CIA property does tampering violate?
+Which CIA property does infodisclosure violate?
 What additional security mechanisms can you incorporate?
+
+1.
+The user-provided values is directly used without any sanitization or validation. 
+
+2.
+Confidentiality could be violated because malicious users can steal data through scripts or SQL injection. Or they might even alter the database, leading to integrity issues.
+
+3.
+All input from user should be sanitized.

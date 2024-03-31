@@ -1,2 +1,10 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+1.
+Vulnerability:
+The absence of authorization allows anyone to retrieve messages, and the user input is not sanitized. 
+The secure version is better because it adds an authentication requirement and uses logs to trace the user's IP, which means it's more accountable
+
+2.
+To address the threat of repudiation, one method is to implement logging to record all users’ information and behavior. 
+By doing this, audit policies can be realized based on the log record.
